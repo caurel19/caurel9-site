@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Herr Caurel | Deutsch Experte</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: gold;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+                url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f');
+    background-size: cover;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+header p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 10px;
+    background: gold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #141414;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 15px;
+    width: 280px;
+    transition: 0.3s;
+    border: 1px solid #222;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border: 1px solid gold;
+}
+
+form input, form select {
+    padding: 12px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+}
+
+.footer {
+    background: black;
+    text-align: center;
+    padding: 20px;
+    color: gray;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>HERR CAUREL</h1>
+    <p>Deutsch-Experte | TELC B1 / B2</p>
+    <p>Bestehen Sie Ihre Prüfung mit Sicherheit</p>
+
+    <a href="https://wa.me/237690804139">
+        <button>WhatsApp Kontakt</button>
+    </a>
+</header>
+
+<section class="section">
+    <h2>Meine Dienstleistungen</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>TELC B1</h3>
+            <p>Sprechen, Schreiben, Prüfungstraining</p>
+        </div>
+
+        <div class="card">
+            <h3>TELC B2</h3>
+            <p>Strategie, Intensivtraining, Erfolg</p>
+        </div>
+
+        <div class="card">
+            <h3>Einzelcoaching</h3>
+            <p>Individuelle Betreuung für schnelle Ergebnisse</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Termin buchen</h2>
+
+    <form>
+        <input type="text" placeholder="Ihr Name" required><br>
+        <input type="email" placeholder="Ihre E-Mail" required><br>
+
+        <select>
+            <option>B1 Kurs</option>
+            <option>B2 Kurs</option>
+        </select><br>
+
+        <input type="date"><br>
+
+        <button>Termin reservieren</button>
+    </form>
+</section>
+
+<section class="section">
+    <h2>Bezahlung</h2>
+    <p>Wählen Sie Ihre Zahlungsmethode</p>
+
+    <button onclick="alert('Mobile Money bientôt disponible')">Mobile Money</button>
+    <button onclick="alert('Paiement en ligne bientôt disponible')">Carte bancaire</button>
+</section>
+
+<section class="section">
+    <h2>Kontakt</h2>
+    <p>+237 690 80 41 39</p>
+    <p>+237 674 81 73 93</p>
+</section>
+
+<div class="footer">
+    <p>© Herr Caurel | Deutsch Coaching</p>
+</div>
+
+</body>
+</html>
